@@ -34,7 +34,7 @@ def pdf_doc_extract_span_df(pdf_doc):
 
                             "span_number":      span_i + 1,
                             "span_character_n": len(spans),
-                            "span_text":        len(span_item['text']),
+                            "span_text":        span_item['text'],
                             "span_font_size":   span_item["size"],
                             "span_font_color":  "#%06x" % (span_item["color"]),
                             "span_font_font":   span_item["font"],
