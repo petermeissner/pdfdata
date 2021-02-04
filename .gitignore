@@ -1,1 +1,4 @@
 pdfdata/__pycache__/**
+dist/**
+pdfdata.egg-info/**
+build/**
