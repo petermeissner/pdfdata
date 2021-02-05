@@ -1,3 +1,5 @@
+![Python 3.6, 3.7, 3.8, 3.9](https://github.com/petermeissner/pdfdata/workflows/Python%20package/badge.svg)
+
 # {pdfdata}
 
 Python package for extracting text and data from PDFs. 
