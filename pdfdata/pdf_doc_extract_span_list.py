@@ -1,4 +1,4 @@
-from pdfdata import *
+from pdfdata import flag_decomposer
 
 
 def pdf_doc_extract_span_list ( pdf_doc ):

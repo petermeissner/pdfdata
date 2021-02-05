@@ -1,5 +1,6 @@
 import json
-from pdfdata import *
+from pdfdata import parse_pdf, pdf_doc_extract_span_df
+
 
 def pdf_text_to_jsonnl(file_in, file_out):
     doc = parse_pdf(file_path=file_in)

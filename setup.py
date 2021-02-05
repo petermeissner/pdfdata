@@ -15,8 +15,8 @@ setup(
    url="https://github.com/petermeissner/pdfdata",
    packages=['pdfdata'],  # same as name
    install_requires=[
-     "pymupdf"
-   ], # external packages as dependencies
+     "PyMuPDF"
+   ],  # external packages as dependencies
    scripts=[],
    classifiers=[
         "Programming Language :: Python :: 3",

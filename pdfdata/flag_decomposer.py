@@ -1,5 +1,3 @@
-from pdfdata import *
-
 def flag_decomposer(flags: int) -> dict:
     """
     Make font flags human readable.
@@ -9,23 +7,23 @@ def flag_decomposer(flags: int) -> dict:
     """
 
     # defaults
-    l = {"superscript": 0, "italic": 0, "serifed": 0, "monospaced": 0, "bold": 0}
+    tmp = {"superscript": 0, "italic": 0, "serifed": 0, "monospaced": 0, "bold": 0}
 
     # check for activation state
     if flags & 2 ** 0:
-        l["superscript"] = 1
+        tmp["superscript"] = 1
 
     if flags & 2 ** 1:
-        l["italic"] = 1
+        tmp["italic"] = 1
 
     if flags & 2 ** 2:
-        l["serifed"] = 1
+        tmp["serifed"] = 1
 
     if flags & 2 ** 3:
-        l["monospaced"] = 1
+        tmp["monospaced"] = 1
 
     if flags & 2 ** 4:
-        l["bold"] = 1
+        tmp["bold"] = 1
 
     # return
-    return l
+    return tmp

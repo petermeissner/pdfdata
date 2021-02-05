@@ -1,4 +1,3 @@
-from pdfdata import *
 
 
 def pdf_doc_extract_line_df(pdf_doc):
