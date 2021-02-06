@@ -1,4 +1,4 @@
-![Python 3.6, 3.7, 3.8, 3.9](https://github.com/petermeissner/pdfdata/workflows/Python%20package/badge.svg)
+![Python 3.6, 3.7, 3.8, 3.9](https://github.com/petermeissner/pdfdata/workflows/Python%20package/badge.svg) [![Downloads Total](https://pepy.tech/badge/pdfdata)](https://pepy.tech/project/pdfdata) [![Downloads per Month](https://pepy.tech/badge/pdfdata/month)](https://pepy.tech/project/pdfdata)
 
 # {pdfdata}
 
