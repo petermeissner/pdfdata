@@ -3,7 +3,7 @@ name: PyPi
 on: 
   release: 
     types: ["published", "created", "edited", "released"]
-  # workflow_dispatch:
+  workflow_dispatch:
   # repository_dispatch:
 
 
