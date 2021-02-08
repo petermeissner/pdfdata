@@ -18,7 +18,7 @@ simple_text2_pdf = pdfdata.parse_pdf('pdfs/simple_text_2.pdf')
 
 
 def test_pdf_doc_extract_line_df():
-  pdf_data = pdfdata.pdf_doc_extract_line_df(simple_text_pdf)
+  pdf_data = pdfdata.pdf_doc_extract_block_line_df(simple_text_pdf)
   assert "text" in pdf_data[0].keys()
 
 

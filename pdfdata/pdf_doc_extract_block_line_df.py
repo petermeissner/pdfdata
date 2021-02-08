@@ -1,6 +1,6 @@
 
 
-def pdf_doc_extract_line_df(pdf_doc):
+def pdf_doc_extract_block_line_df(pdf_doc):
 
     text = []
 
@@ -14,9 +14,11 @@ def pdf_doc_extract_line_df(pdf_doc):
             for line_i, line_item in enumerate(lines):  # iterate through the text lines
                 spans = line_item["spans"]
 
-                line_text = ""
+                line_text = []
                 for span_item in line_item["spans"]:  # iterate through the text spans
-                    line_text = line_text.join(span_item['text'])
+                    line_text.append(span_item['text'])
+
+                line_text = "".join(line_text)
 
                 text.append(
                     {
@@ -45,9 +47,9 @@ if __name__ == "__main__":
 
     pprint(os.getcwd())
     try:
-      text_data = pdf_doc_extract_line_df(parse_pdf('../pdfs/simple_text_2".pdf'))
+      text_data = pdf_doc_extract_block_line_df(parse_pdf('../pdfs/simple_text_2".pdf'))
     except RuntimeError:
-      text_data = pdf_doc_extract_line_df(parse_pdf('pdfs/simple_text_2.pdf'))
+      text_data = pdf_doc_extract_block_line_df(parse_pdf('pdfs/simple_text_2.pdf'))
 
     pprint('\n'.join([e['text'] for e in text_data]))
     text = '\n'.join([e['text'] for e in text_data])
