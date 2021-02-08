@@ -61,8 +61,8 @@ def pdf_doc_extract_span_list ( pdf_doc ):
                     text['pages'][page_i]['blocks'][block_i]["lines"][line_i]["spans"].append(
                         {
                             "span_number": span_i + 1,
-                            "character_n": len(spans),
-                            "text":        len(span_item['text']),
+                            "character_n": len(span_item['text']),
+                            "text":        span_item['text'],
                             "font_size":   span_item["size"],
                             "font_color":  "#%06x" % (span_item["color"]),
                             "font_font":   span_item["font"],
