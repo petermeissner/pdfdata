@@ -44,6 +44,7 @@ jobs:
 
   pypi_deploy:
 
+    needs: check
     runs-on: ubuntu-latest
 
     steps:
@@ -68,8 +69,9 @@ jobs:
 
   github_release:
 
-    name: Create Release
+    needs: pypi_deploy
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
