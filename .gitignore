@@ -6,3 +6,4 @@ debug.log
 test_binary.txt
 test_text.txt
 .vscode/settings.json
+**/__pycache__/**
